@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Ксения Лаврухина](https://up.htmlacademy.ru/adaptive/28/user/2315875).
-* Наставник: `Неизвестно`.
+* Наставник: `Вадим Рахманов`(https://htmlacademy.ru/profile/flander).
 
 ---
 
