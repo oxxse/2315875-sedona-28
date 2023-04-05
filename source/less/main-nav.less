@@ -1,1 +1,41 @@
+.main-nav {
+  width: 320px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+  }
+
+  &__item {
+    color: #FFFFFF;
+    background-color: #81B3D2;
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 12px;
+
+    &:not(:first-child) {
+      border-top: solid 1px darken(#FFFFFF, 20%);
+    }
+
+    &:not(:last-child) {
+      border-bottom: solid 1px rgba(1, 1, 1, 0.2);
+    }
+
+    a {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
+
+  }
+
+}
+
+.main-nav__list--close {
+  display: none;
+}
