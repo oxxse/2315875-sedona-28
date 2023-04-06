@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="page__header main-header">
       <a class="main-header__logo">
         <img src="img/sedona_logo.svg" alt="Логотип городка Седона" width="185" height="96">
       </a>
       <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
-      <nav class="main-nav">
+      <nav class="main-header__nav main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list main-nav__list--close">
             <li class="main-nav__item main-nav__item--current important-text">
@@ -45,80 +45,80 @@
       <section class="hero">
         <div class="hero__wrapper">
           <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-          <img src="img/hero.svg"  width="282" height="214" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+          <img class="hero__text" src="img/hero.svg"  width="282" height="214" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
         </div>
       </section>
       <section class="advantages">
-        <div class="advantages__wrapper">
-          <h2 class="visually-hidden">Преимущества.</h2>
-          <div class="advantages__text-wrapper">
-            <p class="advantages__important-text important-text">
-              Седона — небольшой городок в Аризоне, заслуживающий большего!
-            </p>
-            <p class="advantages__text text">
-              Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-            </p>
-          </div>
-          <ol class="advantages__list">
-            <li class="advantages__item">
-              <div class="advantages__wrapper">
-                <div class="advantages__item-wrapper">
-                  <h3 class="advantages__title important-text">Настоящий городок</h3>
-                  <span class="advantages__divider text">№1</span>
-                  <p class="advantages__description text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                </div>
-                <img src="img/sedona-view.jpg" width="320" height="260" alt="Вид на городок.">
-              </div>
-            </li>
-            <li class="advantages__item offering">
-              <ul class="offering__list">
-                <li class="offering__item offering__item--house">
+        <h2 class="visually-hidden">Преимущества.</h2>
+        <div class="advantages__text-wrapper text-wrapper">
+          <p class="text-wrapper__important-text important-text">
+            Седона — небольшой городок в Аризоне, заслуживающий большего!
+          </p>
+          <p class="text-wrapper__text text">
+            Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+          </p>
+        </div>
+        <ol class="advantages__list">
+          <li class="advantages__block-item">
+            <div class="advantages__item-wrapper">
+              <h3 class="advantages__title important-text">Настоящий городок</h3>
+              <span class="advantages__divider text">№1</span>
+              <p class="advantages__description text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+              <img src="img/sedona-view.jpg" width="320" height="260" alt="Вид на городок.">
+          </li>
+          <li class="advantages__offering-item offering">
+            <ul class="offering__list">
+              <li class="offering__item offering__item--house">
+                <div class="offering-wrapper">
                   <h3 class="offering__title important-text">Жильё</h3>
                   <p class="offering__description text">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
-                </li>
-                <li class="offering__item offering__item--food">
+                </div>
+              </li>
+              <li class="offering__item offering__item--food">
+                <div class="offering-wrapper">
                   <h3 class="offering__title important-text">Еда</h3>
                   <p class="offering__description text">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
-                </li>
-                <li class="offering__item offering__item--souvenirs">
+                </div>
+              </li>
+              <li class="offering__item offering__item--souvenirs">
+                <div class="offering-wrapper">
                   <h3 class="offering__title important-text">Сувениры</h3>
                   <p class="offering__description text">Не только китайского, но и настоящего местного производства!</p>
-                </li>
-              </ul>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages__wrapper">
-                <div class="advantages__item-wrapper">
-                  <h3 class="advantages__title important-text">Там есть мост дьявола</h3>
-                  <span class="advantages__divider text">№2</span>
-                  <p class="advantages__description text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                 </div>
-                <img src="img/canyon.jpg" width="320" height="260" alt="Каньон">
-              </div>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title important-text">Небольшая площадь</h3>
-              <span class="advantages__divider text">№3</span>
-              <p class="advantages__description text">Все достопримечательности находятся очень близко</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title important-text">Красивая дорога</h3>
-              <span class="advantages__divider text">№4</span>
-              <p class="advantages__description text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title important-text">Мало туристов</h3>
-              <span class="advantages__divider text">№5</span>
-              <p class="advantages__description text">Большинство едет в Гранд Каньон и толпится там</p>
-            </li>
-          </ol>
-        </div>
+              </li>
+            </ul>
+          </li>
+          <li class="advantages__block-item">
+            <div class="advantages__item-wrapper">
+              <h3 class="advantages__title important-text">Там есть мост дьявола</h3>
+              <span class="advantages__divider text">№2</span>
+              <p class="advantages__description text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
+            <img src="img/canyon.jpg" width="320" height="260" alt="Каньон">
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title important-text">Небольшая площадь</h3>
+            <span class="advantages__divider text">№3</span>
+            <p class="advantages__description text">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title important-text">Красивая дорога</h3>
+            <span class="advantages__divider text">№4</span>
+            <p class="advantages__description text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title important-text">Мало туристов</h3>
+            <span class="advantages__divider text">№5</span>
+            <p class="advantages__description text">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ol>
       </section>
       <section class="hotel-search">
         <div class="hotel-search__wrapper">
           <h2 class="visually-hidden">Поиск гостиницы.</h2>
           <p class="hotel-search__important-text">Заинтересовались?</p>
-          <p class="text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="hotel-search__text text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="hotel-search__button button" href="#">Найти гостиницу</a>
       </div>
       </section>

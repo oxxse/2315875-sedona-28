@@ -1,12 +1,13 @@
 .main-header {
   width: 320px;
-  position: relative;
+  min-height: 56px;
 
   &__logo {
+    position: absolute;
     display: block;
     width: 185px;
     height: 96px;
-    margin: 0 auto;
+    left: 67px;
   }
 
   &__toggle {
@@ -17,6 +18,12 @@
     right: 20px;
     top: 17px;
     z-index: 2;
+  }
+
+  &__nav {
+    position: absolute;
+    top: 0;
+    z-index: 1;
   }
 
 }
