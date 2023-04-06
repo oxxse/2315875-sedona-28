@@ -3,34 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="main-header">
-      <a class="main-header__logo">
+    <header class="page__header main-header">
+      <a class="main-header__logo" href="index.html">
         <img src="img/sedona_logo.svg" alt="Логотип городка Седона" width="185" height="96">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+      <nav class="main-header__nav main-nav">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html">
+          <ul class="main-nav__list main-nav__list--close">
+            <li class="main-nav__item important-text" href="index.html">
+              <a>
                 Главная
               </a>
               </li>
-              <li class="main-nav__item">
-                <a href="catalog.html">
+              <li class="main-nav__item important-text">
+                <a href="form.html">
                   Фото и видео
                 </a>
               </li>
-              <li class="main-nav__item  main-nav__item--current">
+              <li class="main-nav__item main-nav__item--current important-text">
                 <a>
                   Форма отзыва
                 </a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item important-text">
                 <a href="https://htmlacademy.ru/">
                   Html academy
                 </a>
@@ -39,109 +40,128 @@
           </div>
         </nav>
     </header>
-    <main class="main-container">
+    <main class="page__main main-container">
       <h1 class="visually-hidden">Оставьте отзыв о городке Седона.</h1>
       <section class="hero">
-        <div class="hero__wrapper">
+        <div class="hero__wrapper hero__wrapper--inner">
           <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-          <img src="img/inner-hero.svg"  width="229" height="39" alt="Sedona.">
+          <img class="hero__text" src="img/inner-hero.svg"  width="229" height="39" alt="Sedona.">
         </div>
       </section>
       <section class="review">
         <div class="review__wrapper">
-          <div class="review__text-wrapper">
-            <h2 class="review__heading">Оставьте свой отзыв</h2>
-            <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <div class="review__text-wrapper text-wrapper">
+            <h2 class="text-wrapper__important-text important-text">Оставьте свой отзыв</h2>
+            <p class="text-wrapper__text text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
           <form class="review__filling-form filling-form" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="filling-form__introduction introduction">
-                <legend class="introduction__title">Представьтесь:</legend>
-                <ul class="introduction__list">
-                  <li class="introduction__item">
-                    <label class="introduction__name" for="name">Имя<sup>*</sup>:</label>
-                    <input class="introduction__input" type="text" name="name" id="name" placeholder="Пётр" required>
+            <div class="filling-form__wrapper">
+              <fieldset class="filling-form__control">
+                <legend class="filling-form__title important-text">Представьтесь:</legend>
+                <ul class="filling-form__list">
+                  <li class="filling-form__item">
+                    <label class="filling-form__name text" for="name">Имя<sup>*</sup>:</label>
+                    <input class="filling-form__input control-input" type="text" name="name" id="name" placeholder="Введите имя" value="Пётр" required>
                   </li>
-                  <li class="introduction__item">
-                    <label class="introduction__name" for="surname">Фамилия<sup>*</sup>:</label>
-                    <input class="introduction__input" type="text" name="surname" id="surname" placeholder="Пустота" required>
+                  <li class="filling-form__item">
+                    <label class="filling-form__name text" for="surname">Фамилия<sup>*</sup>:</label>
+                    <input class="filling-form__input control-input" type="text" name="surname" id="surname" placeholder="Введите фамилию" value="Пустота" required>
                   </li>
-                  <li class="introduction__item">
-                    <label class="introduction__name" for="patronymic">Отчество<sup>*</sup>:</label>
-                    <input class="introduction__input" type="text" name="patronymic" id="patronymic" placeholder="Викторович">
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="filling-form__contacts contacts">
-                <legend class="contacts__title">Контактная информация:</legend>
-                <ul class="contacts__list">
-                  <li class="contacts__item">
-                    <label class="contacts__caption" for="phone">Контактный телефон<sup>*</sup>:</label>
-                    <input class="contacts__input contacts__input--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
-                  </li>
-                  <li class="filling-form__contacts contacts__item">
-                    <label class="contacts__caption" for="email">Электронная почта<sup>*</sup>:</label>
-                    <input class="contacts__input contacts__input--email" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                  <li class="filling-form__item">
+                    <label class="filling-form__name text" for="patronymic">Отчество<sup>*</sup>:</label>
+                    <input class="filling-form__input control-input" type="text" name="patronymic" id="patronymic" placeholder="Введите отчество" value="Викторовч">
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="filling-form__control control">
-                <legend class="control__title">Ваше общее впечатление:</legend>
-                <ul class="control__list">
-                  <li class="control__item">
-                    <label class="control__caption">
-                      <input class="control__input visually-hidden" type="radio" value="positive" name="impression-level" checked>
+            </div>
+            <div class="filling-form__wrapper">
+              <fieldset class="filling-form__control">
+                <legend class="filling-form__title important-text">Контактная информация:</legend>
+                <ul class="filling-form__list">
+                  <li class="filling-form__item">
+                    <label class="filling-form__name text" for="phone">Контактный телефон<sup>*</sup>:</label>
+                    <input class="filling-form__input control-input control-input--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+                  </li>
+                  <li class="filling-form__contacts filling-form__item">
+                    <label class="filling-form__name text" for="email">Электронная почта<sup>*</sup>:</label>
+                    <input class="filling-form__input control-input control-input--email" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="filling-form__wrapper">
+              <fieldset class="filling-form__control">
+                <legend class="filling-form__title important-text">Ваше общее впечатление:</legend>
+                <ul class="filling-form__list">
+                  <li class="filling-form__item control-item">
+                    <label class="control-item__name">
+                      <input class="visually-hidden" type="radio" value="positive" name="impression-level" checked>
+                      <span class="control-item__mark control-item__mark--radio"></span>
                       Скорее положительное
                     </label>
                   </li>
-                  <li class="control__item">
-                    <label class="control__caption">
-                      <input class="control__input visually-hidden" type="radio" value="negative" name="impression-level">
+                  <li class="filling-form__item control-item">
+                    <label class="control-item__name">
+                      <input class="visually-hidden" type="radio" value="negative" name="impression-level">
+                      <span class="control-item__mark control-item__mark--radio"></span>
                       Скорее отрицательное
                     </label>
                   </li>
-                  <li class="control__item">
-                    <label class="control__caption">
-                      <input class="control__input visually-hidden" type="radio" value="doubt" name="impression-level">
+                  <li class="filling-form__item control-item">
+                    <label class="control-item__name">
+                      <input class="visually-hidden" type="radio" value="doubt" name="impression-level">
+                      <span class="control-item__mark control-item__mark--radio"></span>
                       Затрудняюсь ответить
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="filling-form__control control">
-                <legend class="control__title">Посещенные достопримечательности:</legend>
-                <ul class="control__list">
-                  <li class="control__item">
-                    <label class="control__caption">
-                      <input class="control__input visually-hidden" type="checkbox" name="bridge" checked>
+            </div>
+            <div class="filling-form__wrapper">
+              <fieldset class="filling-form__control">
+                <legend class="filling-form__title important-text">Посещенные достопримечательности:</legend>
+                <ul class="filling-form__list">
+                  <li class="filling-form__item control-item">
+                    <label class="control-item__name">
+                      <input class="control-item__input visually-hidden" type="checkbox" name="bridge" checked>
+                      <span class="control-item__mark"></span>
                       Мост Дьявола
                     </label>
                   </li>
-                  <li class="control__item">
-                    <label class="control__caption">
-                      <input class="control__input visually-hidden" type="checkbox" name="mountain" checked>
+                  <li class="filling-form__item control-item">
+                    <label class="control-item__name">
+                      <input class="control-item__input visually-hidden" type="checkbox" name="mountain" checked>
+                      <span class="control-item__mark"></span>
                       Гора-Колокол
                     </label>
                   </li>
-                  <li class="control__item">
-                    <label class="control__caption">
-                      <input class="control__input visually-hidden" type="checkbox" name="park" checked>
+                  <li class="filling-form__item control-item">
+                    <label class="control-item__name">
+                      <input class="control-item__input visually-hidden" type="checkbox" name="park" checked>
+                      <span class="control-item__mark"></span>
                       Слайд-парк
                     </label>
                   </li>
-                  <li class="control__item">
-                    <label class="control__caption">
-                      <input class="control__input visually-hidden" type="checkbox" name="rock">
+                  <li class="filling-form__item control-item">
+                    <label class="control-item__name">
+                      <input class="control-item__input visually-hidden" type="checkbox" name="rock">
+                      <span class="control-item__mark"></span>
                       Красная скала
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="filling-form__text text">
-                <label class="filling-form__title" for="review-text">Опишите свои эмоции:</label>
-                <textarea class="text-input" name="review-text" id="review-text" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
+            <div class="filling-form__wrapper">
+              <fieldset class="filling-form__control">
+                <label class="filling-form__title important-text" for="review-text">Опишите свои эмоции:</label>
+                <textarea class="filling-form__text-input control-input control-input--area" name="review-text" id="review-text" cols="30" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
               </fieldset>
+            </div>
+            <div class="filling-form__button-wrapper">
               <button class="filling-form__button button" type="submit">Отправить отзыв</button>
-              <small class="filling-form__legend filling-form__legend--bottom"> * — обязательные поля</small>
+              <small class="filling-form__legend"> * — обязательные поля</small>
+            </div>
           </form>
         </div>
       </section>
@@ -152,25 +172,37 @@
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <a class="social__link social__link--vkontakte button" href="https://vk.com/htmlacademy">
+                <svg width="24" height="14" viewBox="0 0 24 14" fill="white" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z"/>
+                  </svg>
                 <span class="visually-hidden">Мы в ВКонтакте.</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy">
+                <svg width="22" height="18" viewBox="0 0 22 18" fill="white" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.4393 1.62225L18.2705 16.566C18.0313 17.6205 17.408 17.883 16.5223 17.3865L11.6938 13.8285L9.36427 16.0695C9.10627 16.3275 8.89102 16.5428 8.39377 16.5428L8.74102 11.6258L17.6893 3.54C18.0785 3.1935 17.6045 3.00075 17.0848 3.348L6.02227 10.314L1.25977 8.823C0.224021 8.49975 0.205271 7.78725 1.47577 7.29L20.1035 0.113253C20.966 -0.209997 21.7205 0.305253 21.4393 1.623V1.62225Z"/>
+                  </svg>
                 <span class="visually-hidden">Мы в Телеграме.</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">
+                <svg width="20" height="14" viewBox="0 0 20 14" fill="white" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.1813 0H2.81331C1.30618 0 0 1.3 0 2.8V11.1C0 12.7 1.30618 14 2.81331 14H17.1813C18.7889 14 19.9946 12.7 19.9946 11.2V2.8C20.095 1.3 18.7889 0 17.1813 0ZM7.03326 10.4V3.6L13.8656 7L7.03326 10.4Z"/>
+                  </svg>
                 <span class="visually-hidden">Мы в Ютубе.</span>
               </a>
             </li>
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <strong class="copyright__text text">Разработано</strong>
+            <svg fill="black" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.65 0.449951H13.55L0.0500031 1.84995V26.55L13.55 34.5499L26.95 26.55V1.84995L13.65 0.449951ZM25.05 12.55L13.55 5.74995V5.64995H13.45L13.35 5.54995V5.64995L1.95 12.55V3.54995L13.45 2.34995L25.05 3.54995V12.55ZM13.45 7.24995L24.95 13.95L20.45 16.55L13.35 12.35V13.75L19.25 17.25L18.35 17.75L13.35 14.75V16.15L17.15 18.45L16.35 18.95L13.35 17.15V18.55L15.25 19.65L13.45 20.75L2.05 14.05L13.45 7.24995ZM1.95 15.55L13.35 22.35V23.35L5.45 18.65V20.05L13.45 24.85V25.95L5.45 21.25V22.65L13.45 27.45L21.55 22.55V17.35L24.95 15.35V25.35L13.45 32.25L1.95 25.45V15.55Z"/>
+              </svg>
             <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>
