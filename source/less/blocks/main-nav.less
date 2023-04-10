@@ -1,5 +1,5 @@
 .main-nav {
-  width: 320px;
+  min-width: 320px;
 }
 
 .main-nav__list {
@@ -7,20 +7,21 @@
   margin: 0;
   padding: 0;
 
-  // &--close {
-  //   display: none;
-  // }
+  &--close {
+    display: none;
+  }
 }
 
 .main-nav__item {
-  color: #ffffff;
-  background-color: #81b3d2;
+  .important-text;
+  color: @contrast-color;
+  background-color: @main-color;
   text-align: center;
   padding-top: 17px;
   padding-bottom: 12px;
 
   &:not(:first-child) {
-    border-top: solid 1px darken(#ffffff, 20%);
+    border-top: solid 1px darken(@contrast-color, 20%);
   }
 
   &:not(:last-child) {

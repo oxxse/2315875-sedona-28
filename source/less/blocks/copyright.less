@@ -1,15 +1,14 @@
 .copyright__link {
   display: flex;
   align-items: center;
-
   text-decoration: none;
 
   &:hover .copyright__text {
-    color: #81b3d2;
+    color: @main-color;
   }
 
   &:hover path {
-    fill: #81b3d2;
+    fill: @main-color;
   }
 
   &:active {
@@ -22,5 +21,7 @@
 }
 
 .copyright__text {
+  .text;
   margin-right: 12px;
+  color: @text-color;
 }

@@ -1,5 +1,5 @@
 .filling-form__wrapper {
-  border-top: solid 1px #e5e5e5;
+  border-top: solid 1px @border-color;
   padding: 24px 20px 39px 20px;
 }
 
@@ -7,10 +7,10 @@
   margin: 0;
   padding: 0;
   border: none;
-  width: 273px;
 }
 
 .filling-form__title {
+  .important-text;
   text-align: center;
   padding: 0;
   margin: 0 auto 20px auto;
@@ -27,18 +27,18 @@
 }
 
 .filling-form__name {
+  .text;
   margin-left: 16px;
 }
 
 .filling-form__input {
   display: block;
-  width: 248px;
+  min-width: 248px;
 }
 
 .filling-form__text-input {
-  width: 248px;
-  margin-top: 20px;
-  margin-bottom: 17px;
+  display: block;
+  margin: 20px 20px 17px 20px;
 }
 
 .filling-form__button-wrapper {
@@ -49,8 +49,7 @@
 
 .filling-form__button {
   padding: 16px;
-  margin: 0 auto;
-  width: 280px;
+  margin: 0 20px;
 }
 
 .filling-form__legend {
@@ -58,6 +57,6 @@
   font-family: "PT Sans", sans-serif;
   font-size: 12px;
   line-height: 21px;
-  color: #333333;
+  color: @text-color;
   text-transform: uppercase;
 }

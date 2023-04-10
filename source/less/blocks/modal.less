@@ -16,7 +16,7 @@
 .modal__wrapper {
   position: relative;
   margin: auto;
-  background-color: #ffffff;
+  background-color: @contrast-color;
   width: 320px;
 }
 
@@ -28,8 +28,18 @@
   }
 }
 
+.modal__important-text {
+  .title-position;
+  .important-text;
+}
+
+.modal__text {
+  .text-normalize;
+  .text;
+}
+
 .modal__button-wrapper {
-  background-color: #f2f2f2;
+  background-color: @input-color;
   padding: 20px;
 }
 

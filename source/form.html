@@ -16,22 +16,22 @@
       <nav class="main-header__nav main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list main-nav__list--close">
-            <li class="main-nav__item important-text" href="index.html">
+            <li class="main-nav__item" href="index.html">
               <a class="main-nav__link">
                 Главная
               </a>
               </li>
-              <li class="main-nav__item important-text">
+              <li class="main-nav__item">
                 <a class="main-nav__link" href="form.html">
                   Фото и видео
                 </a>
               </li>
-              <li class="main-nav__item main-nav__item--current important-text">
+              <li class="main-nav__item main-nav__item--current">
                 <a class="main-nav__link">
                   Форма отзыва
                 </a>
               </li>
-              <li class="main-nav__item important-text">
+              <li class="main-nav__item">
                 <a class="main-nav__link" href="https://htmlacademy.ru/">
                   Html academy
                 </a>
@@ -50,25 +50,25 @@
       </section>
       <section class="review">
         <div class="review__wrapper">
-          <div class="review__text-wrapper text-wrapper">
-            <h2 class="text-wrapper__important-text important-text">Оставьте свой отзыв</h2>
-            <p class="text-wrapper__text text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <div class="review__text-wrapper">
+            <h2 class="review__important-text">Оставьте свой отзыв</h2>
+            <p class="review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
           <form class="review__filling-form filling-form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="filling-form__wrapper">
               <fieldset class="filling-form__control">
-                <legend class="filling-form__title important-text">Представьтесь:</legend>
+                <legend class="filling-form__title">Представьтесь:</legend>
                 <ul class="filling-form__list">
                   <li class="filling-form__item">
-                    <label class="filling-form__name text" for="name">Имя<sup>*</sup>:</label>
+                    <label class="filling-form__name" for="name">Имя<sup>*</sup>:</label>
                     <input class="filling-form__input control-input" type="text" name="name" id="name" placeholder="Введите имя" value="Пётр" required>
                   </li>
                   <li class="filling-form__item">
-                    <label class="filling-form__name text" for="surname">Фамилия<sup>*</sup>:</label>
+                    <label class="filling-form__name" for="surname">Фамилия<sup>*</sup>:</label>
                     <input class="filling-form__input control-input" type="text" name="surname" id="surname" placeholder="Введите фамилию" value="Пустота" required>
                   </li>
                   <li class="filling-form__item">
-                    <label class="filling-form__name text" for="patronymic">Отчество<sup>*</sup>:</label>
+                    <label class="filling-form__name" for="patronymic">Отчество<sup>*</sup>:</label>
                     <input class="filling-form__input control-input" type="text" name="patronymic" id="patronymic" placeholder="Введите отчество" value="Викторовч">
                   </li>
                 </ul>
@@ -76,14 +76,14 @@
             </div>
             <div class="filling-form__wrapper">
               <fieldset class="filling-form__control">
-                <legend class="filling-form__title important-text">Контактная информация:</legend>
+                <legend class="filling-form__title">Контактная информация:</legend>
                 <ul class="filling-form__list">
                   <li class="filling-form__item">
-                    <label class="filling-form__name text" for="phone">Контактный телефон<sup>*</sup>:</label>
+                    <label class="filling-form__name" for="phone">Контактный телефон<sup>*</sup>:</label>
                     <input class="filling-form__input control-input control-input--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
                   </li>
                   <li class="filling-form__contacts filling-form__item">
-                    <label class="filling-form__name text" for="email">Электронная почта<sup>*</sup>:</label>
+                    <label class="filling-form__name" for="email">Электронная почта<sup>*</sup>:</label>
                     <input class="filling-form__input control-input control-input--email" type="email" name="email" id="email" placeholder="Введите e-mail" required>
                   </li>
                 </ul>
@@ -91,7 +91,7 @@
             </div>
             <div class="filling-form__wrapper">
               <fieldset class="filling-form__control">
-                <legend class="filling-form__title important-text">Ваше общее впечатление:</legend>
+                <legend class="filling-form__title">Ваше общее впечатление:</legend>
                 <ul class="filling-form__list">
                   <li class="filling-form__item control-item">
                     <label class="control-item__name">
@@ -119,7 +119,7 @@
             </div>
             <div class="filling-form__wrapper">
               <fieldset class="filling-form__control">
-                <legend class="filling-form__title important-text">Посещенные достопримечательности:</legend>
+                <legend class="filling-form__title">Посещенные достопримечательности:</legend>
                 <ul class="filling-form__list">
                   <li class="filling-form__item control-item">
                     <label class="control-item__name">
@@ -154,7 +154,7 @@
             </div>
             <div class="filling-form__wrapper">
               <fieldset class="filling-form__control">
-                <label class="filling-form__title important-text" for="review-text">Опишите свои эмоции:</label>
+                <label class="filling-form__title" for="review-text">Опишите свои эмоции:</label>
                 <textarea class="filling-form__text-input control-input control-input--area" name="review-text" id="review-text" cols="30" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
               </fieldset>
             </div>
@@ -199,7 +199,7 @@
         </div>
         <div class="main-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <strong class="copyright__text text">Разработано</strong>
+            <strong class="copyright__text">Разработано</strong>
             <svg fill="black" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.65 0.449951H13.55L0.0500031 1.84995V26.55L13.55 34.5499L26.95 26.55V1.84995L13.65 0.449951ZM25.05 12.55L13.55 5.74995V5.64995H13.45L13.35 5.54995V5.64995L1.95 12.55V3.54995L13.45 2.34995L25.05 3.54995V12.55ZM13.45 7.24995L24.95 13.95L20.45 16.55L13.35 12.35V13.75L19.25 17.25L18.35 17.75L13.35 14.75V16.15L17.15 18.45L16.35 18.95L13.35 17.15V18.55L15.25 19.65L13.45 20.75L2.05 14.05L13.45 7.24995ZM1.95 15.55L13.35 22.35V23.35L5.45 18.65V20.05L13.45 24.85V25.95L5.45 21.25V22.65L13.45 27.45L21.55 22.55V17.35L24.95 15.35V25.35L13.45 32.25L1.95 25.45V15.55Z"/>
               </svg>
@@ -211,9 +211,9 @@
     <div class="modal modal--close">
       <div class="modal__wrapper">
         <section class="modal__content">
-          <div class="modal__text-wrapper modal__text-wrapper--error text-wrapper">
-            <h2 class="text-wrapper__important-text important-text">Что-то пошло не так!</h2>
-            <p class="text-wrapper__text text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <div class="modal__text-wrapper modal__text-wrapper--error">
+            <h2 class="modal__important-text">Что-то пошло не так!</h2>
+            <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           </div>
           <button class="modal__button modal__button--error button" type="button">Ок</button>
         </section>
@@ -222,9 +222,9 @@
     <div class="modal modal--success modal--close">
       <div class="modal__wrapper">
         <section class="modal__content">
-          <div class="modal__text-wrapper text-wrapper">
-            <h2 class="text-wrapper__important-text important-text">Ваш отзыв отправлен!</h2>
-            <p class="text-wrapper__text text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <div class="modal__text-wrapper">
+            <h2 class="modal__important-text">Ваш отзыв отправлен!</h2>
+            <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           </div>
           <div class="modal__button-wrapper">
             <button class="modal__button button" type="button">Закрыть окно</button>
