@@ -26,3 +26,27 @@
   top: 0;
   z-index: 1;
 }
+
+@media (min-width: @tablet-width) {
+  .main-header__toggle {
+    display: none;
+  }
+
+  .main-header {
+    min-width: @tablet-width;
+  }
+
+  .main-header__logo {
+    left: 291px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    min-width: @desktop-width;
+  }
+
+  .main-header__logo {
+    left: 507px;
+  }
+}

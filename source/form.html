@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -89,10 +90,10 @@
                 </ul>
               </fieldset>
             </div>
-            <div class="filling-form__wrapper">
+            <div class="filling-form__wrapper filling-form__wrapper--wide">
               <fieldset class="filling-form__control">
                 <legend class="filling-form__title">Ваше общее впечатление:</legend>
-                <ul class="filling-form__list">
+                <ul class="filling-form__list  filling-form__list--control">
                   <li class="filling-form__item control-item">
                     <label class="control-item__name">
                       <input class="visually-hidden" type="radio" value="positive" name="impression-level" checked>
@@ -117,10 +118,10 @@
                 </ul>
               </fieldset>
             </div>
-            <div class="filling-form__wrapper">
+            <div class="filling-form__wrapper filling-form__wrapper--wide">
               <fieldset class="filling-form__control">
                 <legend class="filling-form__title">Посещенные достопримечательности:</legend>
-                <ul class="filling-form__list">
+                <ul class="filling-form__list filling-form__list--control">
                   <li class="filling-form__item control-item">
                     <label class="control-item__name">
                       <input class="control-item__input visually-hidden" type="checkbox" name="bridge" checked>
@@ -152,16 +153,14 @@
                 </ul>
               </fieldset>
             </div>
-            <div class="filling-form__wrapper">
+            <div class="filling-form__wrapper filling-form__wrapper--wide">
               <fieldset class="filling-form__control">
                 <label class="filling-form__title" for="review-text">Опишите свои эмоции:</label>
                 <textarea class="filling-form__text-input control-input control-input--area" name="review-text" id="review-text" cols="30" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
               </fieldset>
             </div>
-            <div class="filling-form__button-wrapper">
-              <button class="filling-form__button button" type="submit">Отправить отзыв</button>
-              <small class="filling-form__legend"> * — обязательные поля</small>
-            </div>
+            <button class="filling-form__button button" type="submit">Отправить отзыв</button>
+            <small class="filling-form__legend"> * — обязательные поля</small>
           </form>
         </div>
       </section>
@@ -209,7 +208,7 @@
       </div>
     </footer>
     <div class="modal modal--close">
-      <div class="modal__wrapper">
+      <div class="modal__wrapper modal__wrapper--error">
         <section class="modal__content">
           <div class="modal__text-wrapper modal__text-wrapper--error">
             <h2 class="modal__important-text">Что-то пошло не так!</h2>

@@ -1,4 +1,6 @@
 .offering__list {
+  display: grid;
+  grid-template-columns: 1fr;
   list-style: none;
   padding: 0;
   margin: 0 18px 46px 18px;
@@ -19,4 +21,10 @@
   .text;
   margin: 0;
   color: @text-color;
+}
+
+@media (min-width: @tablet-width) {
+  .offering__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

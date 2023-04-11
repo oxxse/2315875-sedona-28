@@ -17,13 +17,15 @@
   position: relative;
   margin: auto;
   background-color: @contrast-color;
-  width: 320px;
+  min-width: 320px;
 }
 
 .modal__text-wrapper {
+  width: 244px;
   margin: 36px 39px 54px 37px;
 
   &--error {
+    width: 237px;
     margin: 45px 42px 28px 41px;
   }
 }
@@ -45,11 +47,40 @@
 
 .modal__button {
   padding: 16px;
-  width: 280px;
+  min-width: 280px;
+  margin: 0 auto;
 
   &--error {
     padding: 16px;
-    width: 180px;
+    min-width: 180px;
     margin: 0 auto 35px auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .modal__wrapper {
+    min-width: 246px;
+
+    &__wrapper--error {
+      min-width: 400px;
+    }
+  }
+
+  .modal__button {
+    min-width: 458px;
+
+    &--error {
+      min-width: 272px;
+    }
+  }
+
+  .modal__text-wrapper {
+    width: 444px;
+    margin: 51px 98px 54px 98px;
+
+    &--error {
+      width: 307px;
+      margin: 45px 42px 28px 41px;
+    }
   }
 }
