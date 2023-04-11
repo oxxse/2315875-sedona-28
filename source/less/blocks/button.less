@@ -1,0 +1,28 @@
+.button {
+  color: @contrast-color;
+  background-color: @main-color;
+  font-family: "PT Sans", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  border-radius: none;
+  display: block;
+  text-align: center;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+  }
+
+  &:active path {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}

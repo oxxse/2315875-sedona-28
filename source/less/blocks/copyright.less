@@ -1,0 +1,27 @@
+.copyright__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover .copyright__text {
+    color: @main-color;
+  }
+
+  &:hover path {
+    fill: @main-color;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
+  &:active path {
+    fill: #b3b3b3;
+  }
+}
+
+.copyright__text {
+  .text;
+  margin-right: 12px;
+  color: @text-color;
+}
