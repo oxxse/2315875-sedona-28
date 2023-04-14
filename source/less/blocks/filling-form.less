@@ -6,33 +6,11 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 60px;
   }
-}
 
-.filling-form__wrapper {
-  margin: 0 auto;
-  padding: 24px 0 39px 0;
-  border-top: solid 1px @border-color;
-}
-
-.filling-form__input-group {
-  @media (min-width: @tablet-width) {
-    width: 50%;
-    box-sizing: border-box;
-
-    &:nth-child(odd) {
-      padding-right: 3.7%;
-    }
-
-    &:nth-child(even) {
-      padding-left: 3.7%;
-    }
-  }
-}
-
-.filling-form__control-group {
-  @media (min-width: @tablet-width) {
-    width: 100%;
+  @media (min-width: @desktop-width) {
+    margin: 0 120px;
   }
 }
 
@@ -40,6 +18,42 @@
   margin: 0;
   padding: 0;
   border: none;
+}
+
+.filling-form__input-group {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0 39px 0;
+  border-top: solid 1px @border-color;
+
+  @media (min-width: @tablet-width) {
+    flex: 1;
+    justify-content: space-between;
+  }
+}
+
+.filling-form__control-group {
+  padding: 24px 0 39px 0;
+  border-top: solid 1px @border-color;
+
+  @media (min-width: @tablet-width) {
+    min-width: 100%;
+  }
+}
+
+.filling-form__text-area {
+  padding: 24px 0 39px 0;
+  border-top: solid 1px @border-color;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    min-width: 100%;
+  }
+}
+
+.filling-form__text-input {
+  min-width: 100%;
+  box-sizing: border-box;
 }
 
 .filling-form__title {
@@ -77,45 +91,28 @@
 
 .filling-form__input {
   display: block;
-  min-width: 248px;
-}
-
-.filling-form__text-area {
-  width: 87.2%;
-  text-align: center;
-
-  @media (min-width: @tablet-width) {
-    width: 84.3%;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 64%;
-  }
-}
-
-.filling-form__text-input {
-  display: flex;
-  margin: 20px auto 17px auto;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .filling-form__button-wrapper {
   display: flex;
-  justify-content: space-between;
-  width: auto;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .filling-form__button {
   padding: 16px;
 
   @media (min-width: @tablet-width) {
-    width: 50%;
+    flex: 1;
   }
 }
 
 .filling-form__legend {
-  align-self: end;
+  text-align: end;
   font-family: "PT Sans", sans-serif;
   font-size: 12px;
   line-height: 21px;
@@ -123,7 +120,7 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    margin-left: auto;
-    padding: 16px;
+    flex: 1;
+    align-self: center;
   }
 }

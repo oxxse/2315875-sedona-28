@@ -2,7 +2,16 @@
   min-width: 320px;
 }
 
+.main-nav__wrapper {
+  position: absolute;
+  min-width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
 .main-nav__list {
+
   list-style: none;
   margin: 0;
   padding: 0;
@@ -13,6 +22,7 @@
 }
 
 .main-nav__item {
+  display: flex;
   .important-text;
   color: @contrast-color;
   background-color: @main-color;
@@ -31,6 +41,7 @@
 
 .main-nav__link {
   display: block;
+  margin: 0 auto;
   color: inherit;
   text-decoration: none;
 }
@@ -38,7 +49,6 @@
 @media (min-width: @tablet-width) {
   .main-nav__list {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
   }
 

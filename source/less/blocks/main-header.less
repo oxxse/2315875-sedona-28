@@ -1,4 +1,5 @@
 .main-header {
+  margin: 0 auto;
   min-width: 320px;
   min-height: 56px;
 }
@@ -8,7 +9,8 @@
   display: block;
   width: 185px;
   height: 96px;
-  left: 67px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .main-header__toggle {
@@ -17,38 +19,17 @@
   height: 22px;
   position: absolute;
   right: 20px;
-  top: 17px;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 2;
 }
 
 .main-header__nav {
-  position: absolute;
-  top: 0;
-  z-index: 1;
+  position: relative;
 }
 
 @media (min-width: @tablet-width) {
   .main-header__toggle {
     display: none;
-  }
-
-  .main-header {
-    min-width: @tablet-width;
-  }
-
-  .main-header__logo {
-    left: 291px;
-    display: block;
-    z-index: 2;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .main-header {
-    min-width: @desktop-width;
-  }
-
-  .main-header__logo {
-    left: 507px;
   }
 }
