@@ -1,7 +1,7 @@
 .main-header {
   margin: 0 auto;
-  min-width: 320px;
   min-height: 56px;
+  min-width: 100%;
 }
 
 .main-header__logo {
@@ -31,5 +31,9 @@
 @media (min-width: @tablet-width) {
   .main-header__toggle {
     display: none;
+  }
+
+  .main-header__logo {
+    z-index: 2;
   }
 }

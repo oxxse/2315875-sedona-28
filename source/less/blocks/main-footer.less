@@ -1,5 +1,5 @@
 .main-footer {
-  width: 100%;
+  min-width: 100%;
 }
 
 .main-footer__wrapper {
@@ -23,8 +23,9 @@
 @media (min-width: @tablet-width) {
   .main-footer__wrapper {
     flex-direction: row;
-    justify-content: space-between;
     padding: 36px 60px;
+    gap: 0;
+    justify-content: space-between;
   }
 }
 
