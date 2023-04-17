@@ -1,12 +1,23 @@
 .offering__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  margin: 0 18px 46px 18px;
+  margin-bottom: 46px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .offering__item {
   padding-top: 25px;
   padding-left: 47px;
+
+  @media (min-width: @tablet-width) {
+    flex: 1;
+  }
 }
 
 .offering__title {

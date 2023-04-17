@@ -1,5 +1,14 @@
 .hotel-search__wrapper {
-  margin: 38px 18px 49px 18px;
+  padding: 38px 18px 49px 18px;
+}
+
+.hotel-search {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-search__map {
+  flex-grow: 1;
 }
 
 .hotel-search__important-text {
@@ -22,4 +31,16 @@
 
 .hotel-search__button {
   padding: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .hotel-search__wrapper {
+    padding: 38px 155px 49px 155px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hotel-search__wrapper {
+    padding: 38px 371px 49px 371px;
+  }
 }

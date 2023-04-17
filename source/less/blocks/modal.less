@@ -6,7 +6,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: 2;
+  z-index: 3;
 
   &--close {
     display: none;
@@ -17,14 +17,13 @@
   position: relative;
   margin: auto;
   background-color: @contrast-color;
-  width: 320px;
 }
 
 .modal__text-wrapper {
-  margin: 36px 39px 54px 37px;
+  padding: 36px 39px 54px 37px;
 
   &--error {
-    margin: 45px 42px 28px 41px;
+    padding: 45px 42px 28px 41px;
   }
 }
 
@@ -44,12 +43,21 @@
 }
 
 .modal__button {
-  padding: 16px;
-  width: 280px;
+  padding: 16px 61px;
+  margin: 0 auto;
 
   &--error {
-    padding: 16px;
-    width: 180px;
+    padding: 16px 64px;
     margin: 0 auto 35px auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .modal__text-wrapper {
+    padding: 51px 98px 54px 98px;
+
+    &--error {
+      padding: 45px 42px 28px 41px;
+    }
   }
 }
