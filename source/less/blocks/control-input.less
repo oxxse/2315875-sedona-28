@@ -1,15 +1,26 @@
 .control-input {
-  border: none;
   background-color: @input-color;
   font-family: "PT Sans", sans-serif;
   color: @dark-color;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  padding: 16px;
+  padding: 12px;
+  border: 4px solid @input-color;
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover {
+    background-color: @border-color;
+    border-color: @border-color;
+  }
+
+  &:focus {
+    border: 4px solid @border-color;
+    outline: none;
+    background-color: @contrast-color;
   }
 
   &--area {

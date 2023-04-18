@@ -89,7 +89,6 @@
 }
 
 .main-nav--open .main-nav__toggle {
-  top: 12.5%;
   background-color: @main-color;
 
   &::before,
@@ -110,6 +109,10 @@
   &::after {
     transform: rotate(-45deg);
   }
+}
+
+.main-nav--open {
+  margin-bottom: -170px;
 }
 
 .main-nav__item {

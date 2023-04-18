@@ -8,15 +8,36 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    margin: 0;
   }
 }
 
 .offering__item {
-  padding-top: 25px;
+  margin: 0 18px;
+  margin-top: 25px;
+  padding-top: 8px;
   padding-left: 47px;
+  background-repeat: no-repeat;
+
+  &--house {
+    background-image: url("../../img/house.svg");
+  }
+
+  &--food {
+    background-image: url("../../img/food.svg");
+  }
+
+  &--souvenirs {
+    background-image: url("../../img/gift.svg");
+  }
 
   @media (min-width: @tablet-width) {
     flex: 1;
+    margin: 60px 33px;
+    padding: 0;
+    padding-top: 98px;
+    text-align: center;
+    background-position: top center;
   }
 }
 
@@ -24,6 +45,11 @@
   .important-text;
   margin: 0;
   margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    flex: 1;
+    margin-bottom: 22px;
+  }
 }
 
 .offering__description {

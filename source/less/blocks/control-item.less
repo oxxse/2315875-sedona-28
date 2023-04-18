@@ -3,8 +3,10 @@
     margin-bottom: 16px;
   }
 
-  &--radio {
-    border-radius: 50%;
+  &:hover {
+    .control-item__mark {
+      background-color: @border-color;
+    }
   }
 }
 
@@ -25,4 +27,42 @@
   height: 46px;
   border-radius: 4px;
   background-color: @input-color;
+  position: relative;
+
+  &--radio {
+    border-radius: 50%;
+  }
+}
+
+.control-item__input--radio:checked + .control-item__mark::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: @text-color;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.control-item__input--checkbox:checked + .control-item__mark::before {
+  content: "";
+  width: 22px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../../img/tick.svg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-item__input:disabled + .control-item__mark {
+  background-color: @disabled-color;
+
+  &::before {
+    opacity: 0.3;
+  }
 }
