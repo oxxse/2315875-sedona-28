@@ -41,6 +41,7 @@
           </div>
         </nav>
     </header>
+    <script src="js/script.js"></script>
     <main class="page__main main-container">
       <h1 class="visually-hidden">Оставьте отзыв о городке Седона.</h1>
       <section class="hero">
@@ -91,7 +92,7 @@
               </fieldset>
             </div>
             <div class="filling-form__control-group">
-              <fieldset class="filling-form__control">
+              <fieldset class="filling-form__control filling-form__control--radio">
                 <legend class="filling-form__title">Ваше общее впечатление:</legend>
                 <ul class="filling-form__list  filling-form__list--control">
                   <li class="filling-form__item control-item">
@@ -119,9 +120,9 @@
               </fieldset>
             </div>
             <div class="filling-form__control-group">
-              <fieldset class="filling-form__control">
-                <legend class="filling-form__title">Посещенные достопримечательности:</legend>
-                <ul class="filling-form__list filling-form__list--control">
+              <fieldset class="filling-form__control filling-form__control--checkboxes">
+                <legend class="filling-form__title">Посещенные<br>достопримечательности:</legend>
+                <ul class="filling-form__list filling-form__list--control filling-form__list--checkboxes">
                   <li class="filling-form__item control-item">
                     <label class="control-item__name">
                       <input class="control-item__input control-item__input--checkbox visually-hidden" type="checkbox" name="bridge" checked>
@@ -154,7 +155,7 @@
               </fieldset>
             </div>
             <div class="filling-form__text-area">
-              <fieldset class="filling-form__control">
+              <fieldset class="filling-form__control filling-form__control--text-area">
                 <label class="filling-form__title" for="review-text">Опишите свои эмоции:</label>
                 <textarea class="filling-form__text-input control-input control-input--area" name="review-text" id="review-text" cols="30" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
               </fieldset>
