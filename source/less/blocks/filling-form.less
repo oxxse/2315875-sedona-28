@@ -66,14 +66,18 @@
 .filling-form__control--radio {
   @media (min-width: @tablet-width) {
     margin-bottom: 74px;
-    margin-top: -13px;
+
+    .filling-form__title {
+      transform: translateY(-50%);
+      margin-bottom: 14px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 99px;
 
     .filling-form__title {
-      margin-bottom: 45px;
+      margin-bottom: 31px;
     }
   }
 }
@@ -81,14 +85,18 @@
 .filling-form__control--checkboxes {
   @media (min-width: @tablet-width) {
     margin-bottom: 54px;
-    margin-top: -26px;
+
+    .filling-form__title {
+      transform: translateY(-50%);
+      margin-bottom: 2px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 99px;
 
     .filling-form__title {
-      margin-bottom: 59px;
+      margin-bottom: 33px;
     }
   }
 }
@@ -110,10 +118,10 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-top: -13px;
-
     .filling-form__title {
       min-width: 402px;
+      transform: translateY(-50%);
+      margin-bottom: 10px;
     }
   }
 }
