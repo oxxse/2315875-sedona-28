@@ -90,16 +90,10 @@
   }
 }
 
-.card:nth-child(odd) .card__wrapper {
-  background-color: @background-contrast-color;
-
-  @media (min-width: @desktop-width) {
-    background-color: fade(@dark-color, 30%);
+.card__wrapper--contrast {
+  @media (min-width: @tablet-width) {
+    background-color: @background-contrast-color;
   }
-}
-
-.card:first-child .card__wrapper {
-  background-color: @input-color;
 
   @media (min-width: @desktop-width) {
     background-color: fade(@dark-color, 30%);
