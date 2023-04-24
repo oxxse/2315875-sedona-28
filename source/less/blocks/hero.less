@@ -1,6 +1,7 @@
 .hero {
   background-image: url("../../img/hero-background.jpg");
   background-position: bottom center;
+  background-repeat: no-repeat;
   background-color: @border-color;
 
   @media (min-resolution: 2dppx) {
@@ -12,11 +13,11 @@
     padding: 90px 0 28px 0;
 
     @media (min-width: @tablet-width) {
-      padding: 77px 0 36px 0;
+      padding: 75px 0 36px 0;
     }
 
     @media (min-width: @desktop-width) {
-      padding: 78px 0 35px 0;
+      padding: 76px 0 35px 0;
     }
 
     &--inner {
@@ -46,4 +47,28 @@
 .hero__text {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 460px;
+    height: auto;
+  }
+}
+
+.hero--inner {
+  .hero__text {
+    @media (min-width: @tablet-width) {
+      width: 457px;
+      height: auto;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 460px;
+      height: auto;
+    }
+  }
 }
