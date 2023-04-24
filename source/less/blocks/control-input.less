@@ -1,5 +1,4 @@
 .control-input {
-  border: none;
   background-color: @input-color;
   font-family: "PT Sans", sans-serif;
   color: @dark-color;
@@ -7,12 +6,35 @@
   font-weight: 700;
   line-height: 26px;
   padding: 16px;
+  border: none;
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
   }
 
+  &:hover {
+    background-color: @border-color;
+  }
+
+  &:focus {
+    box-shadow: inset 4px 4px 0 @border-color, inset -4px -4px 0 @border-color,;
+    outline: none;
+    background-color: @contrast-color;
+  }
+
   &--area {
     resize: none;
+  }
+
+  &--email {
+    background-image: url("../../img/mail-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 100%;
+  }
+
+  &--phone {
+    background-image: url("../../img/phone-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 100%;
   }
 }

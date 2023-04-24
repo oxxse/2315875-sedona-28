@@ -1,7 +1,13 @@
+.card {
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
 .card__image {
-  margin-bottom: 15px;
   // Временно добавила ширину для наглядности
   width: 100%;
+  display: block;
 }
 
 .card__link {
@@ -9,7 +15,7 @@
 }
 
 .card__title {
-  .important-text;
+  .text;
   margin: 0;
   font-weight: 700;
 }
@@ -19,6 +25,10 @@
   margin: 0;
   margin-bottom: 11px;
   text-transform: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .card__liked-quantity {
@@ -30,4 +40,78 @@
   display: inline-block;
   width: 23px;
   height: 23px;
+  padding: 0;
+  background-color: transparent;
+  opacity: 0.3;
+
+  &:hover {
+    background-color: transparent;
+    opacity: 0.6;
+  }
+
+  &:active {
+    background-color: transparent;
+    opacity: 0.8;
+
+    path {
+      fill: @dark-color;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    opacity: 1;
+
+    path {
+      fill: @contrast-color;
+    }
+  }
+}
+
+
+.card__wrapper {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 15px;
+    background-color: @input-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    transform: translateY(-100%);
+    width: 100%;
+    box-sizing: border-box;
+    background-color: fade(@dark-color, 30%);
+    color: @contrast-color;
+  }
+}
+
+.card__wrapper--contrast {
+  @media (min-width: @tablet-width) {
+    background-color: @background-contrast-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: fade(@dark-color, 30%);
+  }
+}
+
+.card__text-wrapper {
+  @media (min-width: @tablet-width) {
+    padding-top: 7px;
+  }
+}
+
+.card__button-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  @media (min-width: @tablet-width) {
+    gap: 9px;
+  }
 }
