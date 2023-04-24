@@ -44,6 +44,10 @@
 
 .video-content__link {
   display: block;
+
+  &:hover .video-content__play-button {
+    border-left-color: @contrast-color;
+  }
 }
 
 .video-content__play-button {
@@ -63,15 +67,15 @@
   }
 }
 
-.video-content__link:hover .video-content__play-button {
+.video-content__wrapper:hover .video-content__play-button {
   border-left-color: @contrast-color;
 }
 
-.video-content__link:active .video-content__play-button {
+.video-content__wrapper:active .video-content__play-button {
   border-left-color: fade(@contrast-color, 50%);
 }
 
 .video-content__image {
-  // Временно добавила ширину для наглядности
   width: 100%;
+  height: auto;
 }

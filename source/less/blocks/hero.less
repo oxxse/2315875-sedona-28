@@ -1,31 +1,46 @@
 .hero {
   background-image: url("../../img/hero-background.jpg");
-  background-position: center;
+  background-position: bottom center;
   background-color: @border-color;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-background@2x.jpg");
+    background-size: 1200px auto;
+  }
+
   .hero__wrapper {
-    padding: 90px 0 85px 0;
+    padding: 90px 0 28px 0;
 
     @media (min-width: @tablet-width) {
-      padding: 77px 0 91px 0;
+      padding: 77px 0 36px 0;
     }
 
     @media (min-width: @desktop-width) {
-      padding: 78px 0 90px 0;
+      padding: 78px 0 35px 0;
     }
 
     &--inner {
-      padding: 52px 0 67px 0;
+      padding: 52px 0 10px 0;
 
       @media (min-width: @tablet-width) {
-        padding: 95px 0 118px 0;
+        padding: 95px 0 71px 0;
       }
 
       @media (min-width: @desktop-width) {
-        padding: 101px 0 120px 0;
+        padding: 101px 0 63px 0;
       }
     }
   }
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  background-image: url("../img/hero-divider.svg");
+  background-repeat: no-repeat;
+  background-size: 100% bottom;
+  background-position: center;
+  height: 57px;
 }
 
 .hero__text {
