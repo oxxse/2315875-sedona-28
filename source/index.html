@@ -9,11 +9,12 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <header class="page__header main-header">
-    <nav class="main-header__nav main-nav main-nav--close">
+    <nav class="main-header__nav main-nav main-nav--close main-nav--nojs">
       <a class="main-nav__logo main-nav__logo--current">
         <img src="img/sedona_logo.svg" alt="Логотип городка Седона" width="185" height="96">
       </a>
@@ -53,8 +54,8 @@
       <div class="hero__wrapper">
         <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/hero-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/hero-tablet.svg">
+          <source media="(min-width: 1200px)" srcset="img/hero-desktop.svg" width="460" height="350">
+          <source media="(min-width: 768px)" srcset="img/hero-tablet.svg" width="461" height="350">
           <img class="hero__text" src="img/hero.svg" width="282" height="214"
             alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
         </picture>
@@ -79,8 +80,8 @@
               жизнь</p>
           </div>
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/city-view-desktop.jpg 1x, img/city-view-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/city-view-tablet.jpg 1x, img/city-view-tablet@2x.jpg 2x">
+            <source media="(min-width: 1200px)" srcset="img/city-view-desktop.jpg 1x, img/city-view-desktop@2x.jpg 2x" width="800" height="256">
+            <source media="(min-width: 768px)" srcset="img/city-view-tablet.jpg 1x, img/city-view-tablet@2x.jpg 2x" width="512" height="256">
             <img class="advantages__image" src="img/city-view.jpg" srcset="img/city-view@2x.jpg 2x" width="320"
               height="256" alt="Вид на городок.">
           </picture>
@@ -110,8 +111,8 @@
         </li>
         <li class="advantages__block-item advantages__block-item--reverse">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/canyon-desktop.jpg 1x, img/canyon-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/canyon-tablet.jpg 1x, img/canyon-tablet@2x.jpg 2x">
+            <source media="(min-width: 1200px)" srcset="img/canyon-desktop.jpg 1x, img/canyon-desktop@2x.jpg 2x" width="800" height="256">
+            <source media="(min-width: 768px)" srcset="img/canyon-tablet.jpg 1x, img/canyon-tablet@2x.jpg 2x" width="512" height="256">
             <img class="advantages__image" src="img/canyon.jpg" srcset="img/canyon@2x.jpg 2x" width="320" height="256"
               alt="Каньон">
           </picture>
