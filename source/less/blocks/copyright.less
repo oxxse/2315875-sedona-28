@@ -2,21 +2,22 @@
   display: flex;
   align-items: center;
   text-decoration: none;
+  color: @dark-color;
 
-  &:hover .copyright__text {
+  &:hover {
     color: @main-color;
-  }
 
-  &:hover path {
-    fill: @main-color;
+    .copyright__text {
+      color: @main-color;
+    }
   }
 
   &:active {
     color: #b3b3b3;
-  }
 
-  &:active path {
-    fill: #b3b3b3;
+    .copyright__text {
+      color: #b3b3b3;
+    }
   }
 }
 
