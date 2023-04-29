@@ -54,9 +54,37 @@
   }
 }
 
+.advantages__block-item:first-child {
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/advantages-divider.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 37px;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+}
+
 .advantages__image {
+  display: block;
+  object-fit: cover;
+
   @media (min-width: @tablet-width) {
     flex: 2;
+  }
+}
+
+.advantages__image-wrapper {
+  @media (min-width: @tablet-width) {
+    flex: 2;
+  }
+
+  .advantages__image {
+    width: 100%;
   }
 }
 
