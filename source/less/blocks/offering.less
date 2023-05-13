@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  margin-bottom: 46px;
+  margin-bottom: 44px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -21,24 +21,35 @@
 
   &--house {
     background-image: url("../img/house.svg");
+
+    @media (min-width: @tablet-width) {
+      background-size: 77px auto;
+    }
   }
 
   &--food {
     background-image: url("../img/food.svg");
+
+    @media (min-width: @tablet-width) {
+      background-size: 77px auto;
+    }
   }
 
   &--souvenirs {
     background-image: url("../img/gift.svg");
+
+    @media (min-width: @tablet-width) {
+      background-size: 80px auto;
+    }
   }
 
   @media (min-width: @tablet-width) {
     flex: 1;
-    margin: 60px 33px;
+    margin: 58px 40px 63px 40px;
     padding: 0;
     padding-top: 98px;
     text-align: center;
     background-position: top center;
-    background-size: auto 73px;
   }
 }
 
@@ -50,6 +61,12 @@
   @media (min-width: @tablet-width) {
     flex: 1;
     margin-bottom: 22px;
+  }
+}
+
+.offering__tablet-break {
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 }
 

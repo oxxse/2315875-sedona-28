@@ -1,11 +1,15 @@
 .hero {
   background-image: url("../img/hero-background.jpg");
-  background-position: bottom center;
+  background-position: center;
   background-repeat: no-repeat;
   background-color: @border-color;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero-background@2x.jpg");
+    background-size: auto 389px;
+  }
+
+  @media (min-width: @tablet-width) {
     background-size: 1200px auto;
   }
 
