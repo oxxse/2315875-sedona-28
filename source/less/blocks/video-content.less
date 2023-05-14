@@ -3,23 +3,26 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 60px;
+    margin-bottom: 34px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0 120px;
+    padding: 0 80px;
+    margin-bottom: 78px;
   }
 }
 
 .video-content__text-wrapper {
   text-align: center;
-  padding: 17px 25px 38px 25px;
+  padding: 17px 0 38px 0;
 
   @media (min-width: @tablet-width) {
     padding: 58px 102px 90px 102px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 62px 258px  92px 258px;
+    padding: 62px 178px 87px 178px;
   }
 }
 
@@ -30,10 +33,23 @@
 .video-content__title {
   .important-text;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 33px;
+  }
+}
+
+.video-content__mobile-break {
+  display: none;
+
+  @media (max-width: @mobile-width-only) {
+    display: inline;
   }
 }
 
@@ -54,7 +70,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-25%, -50%);
+  transform: translate(-33%, -50%);
   height: 54px;
   width: 48px;
   padding: 0;
