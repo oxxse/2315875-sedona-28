@@ -1,6 +1,4 @@
 .media__wrapper {
-  margin: 0 20px;
-
   @media (min-width: @tablet-width) {
     margin: 0 60px;
   }
@@ -12,7 +10,7 @@
 
 .media__text-wrapper {
   border-bottom: solid 1px @border-color;
-  padding: 37px 0;
+  padding: 37px 20px;
 
   @media (min-width: @tablet-width) {
     padding: 66px 95px 80px 95px;
@@ -20,7 +18,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 100px 371px 82px 371px;
+    padding: 100px 371px 85px 371px;
+  }
+}
+
+.media__tablet-break {
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 }
 
@@ -57,7 +61,7 @@
 }
 
 .media__card {
-  padding: 25px 0;
+  padding: 23px 20px 30px 20px;
   border-bottom: solid 1px @border-color;
 
   @media (min-width: @tablet-width) {
