@@ -22,7 +22,10 @@
   }
 }
 
-.media__tablet-break {
+.media__tablet-break::after {
+  content: "\A";
+  white-space: pre;
+
   @media (max-width: @mobile-width-only) {
     display: none;
   }

@@ -32,7 +32,10 @@
   }
 }
 
-.hotel-search__tablet-break {
+.hotel-search__tablet-break::after {
+  content: "\A";
+  white-space: pre;
+
   @media (max-width: @mobile-width-only) {
     display: none;
   }
