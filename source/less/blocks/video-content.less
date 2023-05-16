@@ -45,7 +45,9 @@
   }
 }
 
-.video-content__mobile-break {
+.video-content__mobile-break::after {
+  content: "\A";
+  white-space: pre;
   display: none;
 
   @media (max-width: @mobile-width-only) {
