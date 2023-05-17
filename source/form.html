@@ -16,7 +16,7 @@
 
 <body class="page__body">
   <header class="page__header main-header">
-    <nav class="main-header__nav main-nav main-nav--close">
+    <nav class="main-header__nav main-nav main-nav--nojs">
       <a class="main-nav__logo" href="index.html">
         <img src="img/sedona_logo.svg" alt="Логотип городка Седона" width="185" height="96">
       </a>
@@ -49,7 +49,6 @@
       </div>
     </nav>
   </header>
-  <script src="js/script.js"></script>
   <main class="page__main main-container">
     <h1 class="visually-hidden">Оставьте отзыв о городке Седона.</h1>
     <section class="hero hero--inner">
@@ -179,7 +178,7 @@
             <fieldset class="filling-form__control filling-form__control--text-area">
               <label class="filling-form__title" for="review-text">Опишите свои эмоции:</label>
               <textarea class="filling-form__text-input control-input control-input--area" name="review-text"
-                id="review-text" cols="" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
+                id="review-text" cols="4" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <div class="filling-form__button-wrapper">
               <button class="filling-form__button button" type="submit">Отправить отзыв</button>
@@ -198,7 +197,7 @@
           <li class="social__item">
             <a class="social__link social__link--vkontakte button" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы в ВКонтакте.</span>
-              <svg aria-hidden="true" width="24" height="14">
+              <svg  class="social__icon" aria-hidden="true" width="24" height="14">
                 <use xlink:href="img/sprite.svg#vk-icon"></use>
               </svg>
             </a>
@@ -206,7 +205,7 @@
           <li class="social__item">
             <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Мы в Телеграме.</span>
-              <svg aria-hidden="true" width="22" height="18">
+              <svg class="social__icon" aria-hidden="true" width="22" height="18">
                 <use xlink:href="img/sprite.svg#tg-icon"></use>
               </svg>
             </a>
@@ -214,7 +213,7 @@
           <li class="social__item">
             <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Мы в Ютубе.</span>
-              <svg aria-hidden="true" width="20" height="14">
+              <svg class="social__icon" aria-hidden="true" width="20" height="14">
                 <use xlink:href="img/sprite.svg#yt-icon"></use>
               </svg>
             </a>
@@ -225,7 +224,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <strong class="copyright__text">Разработано</strong>
           <span class="visually-hidden">HTML Academy.</span>
-          <svg aria-hidden="true" width="27" height="35">
+          <svg class="copyright__icon" aria-hidden="true" width="27" height="35">
             <use xlink:href="img/sprite.svg#academy-icon"></use>
           </svg>
         </a>
@@ -236,7 +235,7 @@
     <div class="modal__wrapper modal__wrapper--error">
       <section class="modal__content">
         <div class="modal__text-wrapper modal__text-wrapper--error">
-          <h2 class="modal__important-text">Что-то пошло<span class="modal__tablet-break"></span>не так!</h2>
+          <h2 class="modal__important-text">Что-то пошло <span class="modal__tablet-break"></span> не так!</h2>
           <p class="modal__text">Проверьте поля, выделенные красным, <span class="modal__tablet-break"></span> скорее всего вы
             забыли их заполнить</p>
         </div>
@@ -261,6 +260,7 @@
       </section>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
