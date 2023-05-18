@@ -13,6 +13,9 @@
   display: block;
   text-align: center;
 
+  
+
+
   &:hover {
     background-color: #669ec0;
   }
@@ -20,5 +23,19 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #5496bd;
+  }
+
+  &:disabled {
+    background-color: @border-color;
+    cursor: default;
+
+    &:hover {
+      background-color: @border-color;
+    }
+
+    &:active {
+      color: @contrast-color;
+      background-color: @border-color;
+    }
   }
 }
