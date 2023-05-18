@@ -158,21 +158,23 @@
   }
 }
 
-.advantages__tablet-break::after {
-  content: "\A";
-  white-space: pre;
-
+.advantages__tablet-break {
   @media (max-width: @mobile-width-only) {
     display: none;
   }
 }
 
-.advantages__desktop-break::after {
-  content: "\A";
-  white-space: pre;
-
-  @media (max-width: @tablet-width) {
+.advantages__mobile-desktop-break {
+  @media (min-width: @tablet-width) and (max-width: 1199.9px) {
     display: none;
+  }
+}
+
+.advantages__desktop-break {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
   }
 }
 

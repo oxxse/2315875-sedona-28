@@ -1,0 +1,1 @@
+document.querySelector('.hotel-search__map-wrapper').classList.remove('hotel-search__map-wrapper--nojs');

@@ -16,14 +16,14 @@
 }
 
 .filling-form__input-group {
-  padding: 25px 20px 36px 20px;
+  padding: 25px 20px 37px 20px;
   border-top: solid 1px @border-color;
 
   @media (min-width: @tablet-width) {
     flex: 1;
     border: none;
     padding: 8px 0;
-    margin-bottom: 68px;
+    margin-bottom: 70px;
 
     &:first-child {
       padding-right: 28px;
@@ -130,7 +130,7 @@
 .filling-form__control--text-area {
   .filling-form__title {
     display: inline-block;
-    margin-bottom: 22px;
+    margin-bottom: 21px;
   }
 
   @media (min-width: @tablet-width) {
@@ -158,7 +158,7 @@
   .important-text;
   text-align: center;
   padding: 0;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   background-color: @contrast-color;
 
   @media (min-width: @tablet-width) {
@@ -177,11 +177,13 @@
   flex-direction: column;
 
   &:not(:last-child) {
-    margin-bottom: 11px;
+    margin-bottom: 12px;
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-bottom: 11px;
+    }
   }
 }
 
@@ -238,7 +240,7 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 27px;
+    gap: 32px;
   }
 }
 
@@ -260,6 +262,7 @@
 
   @media (min-width: @tablet-width) {
     flex: 1;
-    align-self: center;
+    margin-top: 22px;
+    font-size: 14px;
   }
 }

@@ -12,3 +12,5 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('main-nav--open');
   }
 });
+
+document.querySelector('.hotel-search__map-wrapper').classList.remove('hotel-search__map-wrapper--nojs');
